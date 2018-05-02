@@ -15,7 +15,7 @@ Route::resource('banners','BannersController');
 Route::get('/', function () {
     return view('pages.home');
 });
-//Route::post('banners.save','BannersController@store');
+Route::post('banners.save','BannersController@store');
 
 
 Route::get('{zip}/{street}','BannersController@show');
