@@ -25,6 +25,13 @@ class Banner extends Model
         $street = str_replace('-',' ',$street);
         return static::where(compact('zip','street'))->first();
 
+
+
+
+
+
+
+
     }
 
     public function getPriceAttribute($price)
