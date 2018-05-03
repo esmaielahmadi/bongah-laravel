@@ -20,4 +20,3 @@ Route::post('banners.save','BannersController@store');
 Route::get('{zip}/{street}','BannersController@show');
 Route::post('{zip}/{street}/photos', 'BannersController@addPhotos')->name('addPhotos');
 Route::get('/home', 'HomeController@index')->name('home');
-
